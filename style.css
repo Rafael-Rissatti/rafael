@@ -14,11 +14,12 @@ body {
 
 }
 h1{
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Source Code Pro', monospace;
 }
 
 h2{
-	font-family: 'Source Code Pro', monospace;
+	
+	font-family: 'Indie Flower', cursive;
 }
 
 
