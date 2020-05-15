@@ -14,7 +14,8 @@ body {
 
 }
 h1{
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'Audiowide', cursive;
+	
 }
 
 h2{
@@ -45,7 +46,7 @@ h2{
 	background-color: white;
 	position: fixed;
 	width: 100vw;
-	border-bottom: rebeccapurple 6px double;
+	border-bottom:rgb(80, 50, 10) 3px solid;
 	top: 0;
 }
 
@@ -56,10 +57,10 @@ header{
 	width: 100vw;
 	justify-content: center;
 	align-items: center;
-	background-image: url("o.png");
-	background-size: 15vh;
+	background-image: url("f.png");
+	background-size: 80vh;
 	background-position: fixed; 
-	border-bottom: rebeccapurple 6px double;
+	border-bottom: rgb(80, 50, 10) 3px solid;
 }
 
 
@@ -75,7 +76,7 @@ header{
 }
 
 
-.menu a{	
+.menu a{		
 	padding: 20px;
 	display: block;
 	font-weight: bold;
@@ -83,7 +84,10 @@ header{
 
 
 nav{
-	background-image: url("giphy (1).gif");
+	background-image: url("ns.gif");
+	background-size: 70vh;
+	
+	
 }
 
 
@@ -94,9 +98,11 @@ a{
 
 
 a:hover{
-	text-decoration: underline;
-	background-image: url("giphy.gif");
-	background-size: 100px;
+	border-bottom: rgb(0, 255, 200) 2px solid;	
+	font-style: italic;
+	padding-bottom: 0px;
+
+
 	
 }
 
@@ -119,7 +125,7 @@ a:hover{
 }
 
 section{
-	background-image: url("o.png");
+	background-color: #d8d3d3;
 }
 
 
@@ -160,7 +166,8 @@ figcaption:hover{
 
 
 footer{
-	background-image: url("giphy.gif");
-	background-size: 20vh;
+	background-image: url("cd1.gif");
+	background-size: 50vh;
 	height: 13vh;
+	border-top:  rgb(80, 50, 10) 3px solid;
 }
