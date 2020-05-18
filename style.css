@@ -116,7 +116,7 @@ nav a:hover{
 
 section{
 	background-color: #aaaaaa;
-	height: 100vh;
+	height: 150vh;
 }
 
 
@@ -185,13 +185,14 @@ section{
 	
 	
 }
+
 @media(min-width: 590px){
 	.portifolio .grid{	
 		font-size: 22px;	
 		grid-template-columns: 300px 300px;
 		justify-content: center;
 		align-content: center;
-		gap: 2em;
+		gap: 1em;
 	}
 }
 @media(min-width: 960px){
@@ -200,7 +201,7 @@ section{
 		grid-template-columns:repeat(3, 300px); 
 		justify-content: center;
 		align-content: center;
-		gap: 2em;		
+		gap: 1em;		
 		
 	}
 }
@@ -211,7 +212,7 @@ section{
 		grid-template-columns:repeat(3, 300px); 
 		justify-content: center;
 		align-content: center;		
-		gap: 6em;
+		gap: 3em;
 		height: 70vh;
 		
 	}
@@ -230,6 +231,6 @@ section{
 footer{
 	background-image: url("cd1.gif");
 	background-size: 50vh;
-	height: 13vh;
+	height: 25vh;
 	border-top:  rgb(80, 50, 10) 3px solid;
 }
