@@ -162,22 +162,7 @@ to{
 
 }
 
-.site-title{	
-	animation: linear 0.8s animat forwards;
-}
 
-@keyframes animat{
-	from{
-		transform: scale(30) translateY(-30vh);
-		opacity:0;
-}
-to{
-	transform: scale(1) translateY(3vh); 
-	opacity: 1;
-
-}
-
-}
 
 .site-title{
 	font-size: 4em;	
