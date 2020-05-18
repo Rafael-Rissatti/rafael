@@ -48,6 +48,9 @@ body {
 	
 	font-family: 'Source Code Pro', monospace;	
 	font-size: 14px;	
+	background-image: url("f.png");
+	background-size: 50vh;	
+	background-attachment: fixed;
 }
 
 
@@ -90,8 +93,7 @@ header{
 	width: 100%;
 	justify-content: center;
 	align-items: center;
-	background-image: url("f.png");
-	background-size: 50vh;	
+	
 	border-bottom: rgb(80, 50, 10) 3px solid;
 }
 
