@@ -43,11 +43,6 @@ table {
 }
 
 
-}
-header .home{
-	width: 10vw;
-	height: 10vh;
-}
 
 body {
 	
@@ -92,7 +87,7 @@ h1{
 header{
 	height: 100vh;
 	display: flex;
-	width: 100vw;
+	width: 100%;
 	justify-content: center;
 	align-items: center;
 	background-image: url("f.png");
@@ -186,9 +181,9 @@ section{
 	color:#2c023b;
 	text-align: center;
 	font-style: italic;
-	padding:2em;
-	font-family: 'Press Start 2P', cursive;
-	margin-bottom: 3em;
+	padding-top:4em;
+	font-family: 'Press Start 2P', cursive;	
+	line-height: 5em;
 }
 
 
@@ -223,7 +218,7 @@ figcaption{
 
 .img-portifolio:hover{		
 	transform: scale(1.2);
-	transform: rotate(360deg);
+	
 	
 
 }
@@ -373,6 +368,7 @@ figure{
 	color: rgb(45, 255, 200, 0.8);	
 	text-shadow:  #2c023b 10px 10px 10px;
 	transition: text-shadow 0.5s, color 1s;
+	
 }
 
 
@@ -381,7 +377,7 @@ figure{
 	font-size: 6em;
 	text-shadow:  #2c023b 10px 10px 10px;
 	transition: text-shadow 0.5s, color 1s;
-	transform: rotate(360deg);	
+		
 		
 }
 
@@ -405,6 +401,7 @@ figure{
 	padding:2em;
 	font-family: 'Press Start 2P', cursive;	
 	border-top: rgb(80, 50, 10) 3px solid;
+	padding-top: 4em;
 }
 
 
