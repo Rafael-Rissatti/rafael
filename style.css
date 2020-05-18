@@ -1,7 +1,47 @@
-*{
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 
 }
 header .home{
@@ -45,6 +85,7 @@ h1{
 	top: 0;
 	background-image: url("ns.gif");
 	background-size: 70vh;
+	z-index: 1;
 }
 
 
@@ -77,14 +118,15 @@ header{
 nav a{
 	color: rgb(255 255 255);
 	text-decoration: none;
-	font-family: 'Press Start 2P', cursive;
-	
+	font-family: 'Press Start 2P', cursive;	
 	color: darkgrey;
 }
 
 
 nav a:hover{
-	border-bottom: rgb(0, 255, 200) 2px solid;		
+	color: rgb(45, 255, 200, 0.8);
+	text-shadow:rgb(88, 0, 129) 3px 3px 2px;
+	transition: color 0.5s;		
 }
 
 
@@ -103,6 +145,40 @@ nav a:hover{
 }
 
 
+.site-subtitle{	
+	animation: linear 1s anima forwards;
+}
+
+@keyframes anima{
+	from{
+		transform: scale(0.2) translateY(50vh);
+		opacity:0;
+}
+to{
+	transform: scale(1) translateY(1vh); 
+	opacity: 1;
+
+}
+
+}
+
+.site-title{	
+	animation: linear 0.8s animat forwards;
+}
+
+@keyframes animat{
+	from{
+		transform: scale(30) translateY(-30vh);
+		opacity:0;
+}
+to{
+	transform: scale(1) translateY(3vh); 
+	opacity: 1;
+
+}
+
+}
+
 .site-title{
 	font-size: 4em;	
 }
@@ -110,13 +186,14 @@ nav a:hover{
 
 .site-title:hover{
 	
-	text-shadow: #5ffc67 2px 2px 5px;
+	text-shadow: rgb(45, 255, 200) 2px 2px 5px;
+	transition: text-shadow 0.13s;
 }
 
 
 section{
 	background-color: #aaaaaa;
-	height: 150vh;
+	min-height: 100vh;
 }
 
 
@@ -124,15 +201,23 @@ section{
 	color:#2c023b;
 	text-align: center;
 	font-style: italic;
-	padding-top: 45px;
+	padding:2em;
 	font-family: 'Press Start 2P', cursive;
 	margin-bottom: 3em;
 }
 
 
-.portifolio h2:hover{
-	
-	text-shadow: #5ffc67 2px 2px 5px;
+.portifolio h2:hover{	
+	text-shadow:  rgb(45, 255, 200, 0.8) 5px 5px 5px;
+	transition: text-shadow 0.5s;
+}
+
+
+.portifolio h2:active{
+color:rgb(253, 155, 28);	
+	text-shadow:  #2c023b -1px -1px 2px;
+	transition: text-shadow 0.2s, color 0.1s;
+
 }
 
 .grid figure a{
@@ -140,25 +225,37 @@ section{
 	color:#2c023b;
 }
 
-.grid figure figcaption:hover{
-	text-decoration: underline  #5ffc67;
-
+figcaption{
+	text-align: center;
 }
 
 
-.portifolio figure{
-	text-align: center;	
+.img-portifolio{		
 	font-size: 1em;
+	transition: transform 0.5s;	
 }
 
 
-.img-portifolio{
-	width: 30%;	
+.img-portifolio:hover{		
+	transform: scale(1.2);
+	transform: rotate(360deg);
+	
+
+}
+
+
+figure{
+	text-align: center;
 }
 
 
 
-@media(min-width: 1100px){
+.grid{
+	vertical-align: bottom;
+}
+
+
+@media(min-width: 160px){
 	.img-portifolio{
 		width: 55%;
 		gap: 3em;
@@ -181,8 +278,7 @@ section{
 .portifolio .grid{
 	display: grid;
 	gap: 2em;
-	
-	
+	padding-bottom: 50px;
 	
 }
 
@@ -208,12 +304,13 @@ section{
 
 
 @media(min-width: 1300px){
-	.portifolio .grid{		
+	.portifolio .grid{	
+		font-size: 26px;	
 		grid-template-columns:repeat(3, 300px); 
 		justify-content: center;
 		align-content: center;		
 		gap: 3em;
-		height: 70vh;
+		
 		
 	}
 }
@@ -226,6 +323,105 @@ section{
 	}
 
 }
+
+.icones{
+	display: grid;
+	grid-template-columns: 50px;
+	justify-content: center;
+	align-content: center;
+	justify-items: center;
+	gap: 10em;
+	min-height:50vh;
+}
+
+
+@media(min-width: 420px){
+	.icones{
+		display: grid;
+		grid-template-columns: 50px 50px;
+		justify-content: center;
+		align-content: center;
+		justify-items: center;
+		gap: 10em;
+		min-height:50vh;
+	}
+	
+}
+@media(min-width: 660px){
+	.icones{
+		display: grid;
+		grid-template-columns: 50px 50px 50px;
+		justify-content: center;
+		align-content: center;
+		justify-items: center;
+		gap: 10em;
+		min-height:50vh;
+	}
+	
+}
+
+
+@media(min-width: 1300px){
+	.icones{
+		display: grid;
+		grid-template-columns: 50px 50px 50px;
+		justify-content: center;
+		align-content: center;
+		justify-items: center;
+		gap: 20em;
+		min-height:50vh;
+	}
+	
+}
+
+.contato{
+	background-color: darkslateblue;
+}
+
+.contato a{
+	color: whitesmoke;
+	font-size: 6em;
+		
+}
+
+.contato h2:hover{
+	color: rgb(45, 255, 200, 0.8);	
+	text-shadow:  #2c023b 10px 10px 10px;
+	transition: text-shadow 0.5s, color 1s;
+}
+
+
+.contato a:hover{
+	color: rgb(45, 255, 200, 0.8);
+	font-size: 6em;
+	text-shadow:  #2c023b 10px 10px 10px;
+	transition: text-shadow 0.5s, color 1s;
+	transform: rotate(360deg);	
+		
+}
+
+.contato h2:active{
+	color:rgb(253, 155, 28);	
+	text-shadow:  #2c023b -1px -1px 2px;
+	
+	
+
+}
+.contato a:active{
+	color:rgb(253, 155, 28);	
+	text-shadow:  #2c023b -1px -1px 2px;
+	transition: text-shadow 0.2s, color 0.1s;		
+}
+
+
+.contato h2{
+	color: whitesmoke;	
+	font-style: italic;
+	padding:2em;
+	font-family: 'Press Start 2P', cursive;	
+	border-top: rgb(80, 50, 10) 3px solid;
+}
+
 
 
 footer{
