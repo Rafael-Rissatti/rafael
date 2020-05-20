@@ -309,9 +309,7 @@ figure{
 .icones{
 	display: grid;
 	grid-template-columns: 50px;
-	justify-content: center;
-	align-content: center;
-	justify-items: center;
+	justify-content: center;	
 	gap: 10em;
 	min-height:50vh;
 }
@@ -321,9 +319,7 @@ figure{
 	.icones{
 		display: grid;
 		grid-template-columns: 50px 50px;
-		justify-content: center;
-		align-content: center;
-		justify-items: center;
+		justify-content: center;		
 		gap: 10em;
 		min-height:50vh;
 	}
@@ -333,9 +329,7 @@ figure{
 	.icones{
 		display: grid;
 		grid-template-columns: 50px 50px 50px;
-		justify-content: center;
-		align-content: center;
-		justify-items: center;
+		justify-content: center;		
 		gap: 10em;
 		min-height:50vh;
 	}
@@ -347,9 +341,7 @@ figure{
 	.icones{
 		display: grid;
 		grid-template-columns: 50px 50px 50px;
-		justify-content: center;
-		align-content: center;
-		justify-items: center;
+		justify-content: center;		
 		gap: 20em;
 		min-height:50vh;
 	}
@@ -409,8 +401,58 @@ figure{
 
 
 footer{
-	background-image: url("cd1.gif");
-	background-size: 50vh;
-	height: 25vh;
+	background-image: url("star-wars-stars.png");
+	background-size: 80vh;
+	height: 30vh;
 	border-top:  rgb(80, 50, 10) 3px solid;
+}
+
+
+.rdpimg{
+	width: 7%;	
+	margin-top: 120px;
+	display: inline-flex;	
+}
+.rodape{
+	color: #aaaaaa;
+	font-size: 16px;
+	text-align: center;
+}
+footer a{
+	font-style: italic;
+	text-decoration: none;
+	color: chartreuse;
+	
+}
+footer a:hover{
+	text-shadow: rgb(255, 255, 0) 0px 0px 2px;
+	transition: text-shadow 0.2s;
+}
+.texto_sobre h2{
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 2em;
+	margin-bottom: 1.5em;
+}
+
+
+.texto_sobre{
+	font-family: 'IBM Plex Mono', monospace;
+	color: rgb(104, 29, 0);
+	padding: 2em;
+	text-indent: 3em;
+	background-image: url("image.jpg");
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+
+.texto_sobre p{
+	margin-bottom: 2em;
+	text-align: justify;
+}
+
+@media(min-width: 1000px){
+	.texto_sobre{
+	max-width: 1200px;
+	}
 }
